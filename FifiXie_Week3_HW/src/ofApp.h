@@ -26,8 +26,8 @@ class ofApp : public ofBaseApp{
 		ofParameter <float> sinParam;
 		ofParameter <float> cosParam;
 		ofxLabel soundOn;
-		float sine;
-		float cose;
+		float hori;
+		float verti;
 
 		ofSoundPlayer dvsn;
 		float * fftSmooth;

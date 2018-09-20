@@ -28,8 +28,8 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
 	t += 10;
-	sine = sin(t)*sinParam;
-	cose = cos(t)*cosParam;
+	hori = sin(t)*sinParam;
+	verti = cos(t)*cosParam;
 
 	ofSoundUpdate();
 	float * value = ofSoundGetSpectrum(bands);
@@ -50,7 +50,7 @@ void ofApp::draw(){
 	ofSetColor(ofRandom(175, 255), ofRandom(0, 255), ofRandom(75, 255), ofRandom(75, 98));
 	for (int i = 0; i < bands; i++)
 	{
-		ofCircle(sine, cose, -(fftSmooth[i] * 100));
+		ofCircle(hori, verti, -(fftSmooth[i] * 100));
 	}
 }
 
