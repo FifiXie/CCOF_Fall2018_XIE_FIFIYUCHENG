@@ -28,8 +28,8 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
 	t += 10;
-	hori = sin(t)*sinParam;
-	verti = cos(t)*cosParam;
+	hori = sin(tan((cos(t)*1.2)))*sinParam;
+	verti = abs(cos(t*2)*(sin(t*4))) * cosParam;
 
 	ofSoundUpdate();
 	float * value = ofSoundGetSpectrum(bands);
