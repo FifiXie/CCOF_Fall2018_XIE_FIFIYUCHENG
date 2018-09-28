@@ -17,8 +17,8 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
 
-		pos1[TRICIRCLE].x = Center0.x + cos(angle*5) * 60 ;
-		pos1[TRICIRCLE].y = Center0.y + sin(angle*5) * 60;
+		pos1[TRICIRCLE].x = Center0.x + cos(angle) * 60 ;
+		pos1[TRICIRCLE].y = Center0.y + sin(angle) * 60;
 
 		pos2[TRICIRCLE].x = Center1.x + cos(angle) * 180;
 		pos2[TRICIRCLE].y = Center1.y + sin(angle) * 180;
@@ -39,19 +39,19 @@ void ofApp::draw(){
 	
 	for (int i = 9; i >= TRICIRCLE; i--) {
 		ofSetColor(ofRandom(175, 255), ofRandom(0, 255), ofRandom(75, 255), ofRandom(98, 100));
-		ofDrawCircle(pos1[i], 27);
-		ofDrawCircle(pos2[i], 36);
-		ofDrawCircle(pos3[i], 45);
-		ofDrawCircle(pos4[i], 21);
+		ofDrawCircle(pos1[i], ofRandom(21,45));
+		ofDrawCircle(pos2[i], ofRandom(21, 45));
+		ofDrawCircle(pos3[i], ofRandom(21, 45));
+		ofDrawCircle(pos4[i], ofRandom(21, 45));
 
 	}
 
 	for (int i = 9; i >= TRICIRCLE; i--) {
 		ofSetColor(ofRandom(105, 185), ofRandom(100, 150), ofRandom(220, 255), 99);
-		ofDrawCircle(pos1[i]-181, 9);
-		ofDrawCircle(pos2[i]+120, 40);
-		ofDrawCircle(pos3[i]+90, 18);
-		ofDrawCircle(pos4[i]+180, 25);
+		ofDrawCircle(pos1[i]-181, ofRandom(9, 40));
+		ofDrawCircle(pos2[i]+120, ofRandom(21, 45));
+		ofDrawCircle(pos3[i]+90, ofRandom(21, 45));
+		ofDrawCircle(pos4[i]+180, ofRandom(21, 45));
 
 	}
 
