@@ -11,6 +11,7 @@ void ofApp::setup(){
 	Center2.set(ofGetWindowWidth() * 2 / 3, ofGetWindowHeight() / 3);
 	Center3.set(ofGetWindowWidth() * 3 / 5, ofGetWindowHeight() / 4);
 	angle = 1;
+	//ofSetBackgroundAuto(false);
 
 }
 
