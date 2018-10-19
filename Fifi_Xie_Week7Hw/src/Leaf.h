@@ -18,5 +18,6 @@ public:
 	ofPoint leafPosNew;
 	ofPoint vel;
 	float mass; 
+	float radius;
 };
 
