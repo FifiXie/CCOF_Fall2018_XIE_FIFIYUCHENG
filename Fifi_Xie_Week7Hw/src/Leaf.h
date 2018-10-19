@@ -17,5 +17,6 @@ public:
 	float angle = 1;
 	ofPoint leafPosNew;
 	ofPoint vel;
+	float mass; 
 };
 
