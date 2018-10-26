@@ -41,8 +41,7 @@ void Leaf::update()
 void Leaf::draw()
 {
 	ofSetColor(7, 108, 49);
-
-			ofDrawEllipse(leafPosNew, radius, mass);
+	ofDrawEllipse(leafPosNew, radius, mass);
 
 }
 
