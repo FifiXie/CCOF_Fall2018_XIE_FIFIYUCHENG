@@ -4,7 +4,7 @@
 #include "ofMain.h"
 #include "Leaf.h"
 
-#define TOTALNUM 9
+#define TOTALNUM 18
 
 class ofApp : public ofBaseApp{
 
